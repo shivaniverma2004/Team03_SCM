@@ -46,19 +46,26 @@
                     <view key="view" contentMode="scaleToFill" id="mdU-pA-0qu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56G-uP-k78">
+                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="ckC-7j-XhN" kind="show" id="qP4-Dn-hcj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3gq-VO-bBv"/>
                         <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="56G-uP-k78" firstAttribute="centerX" secondItem="mdU-pA-0qu" secondAttribute="centerX" id="JSL-LZ-5c7"/>
+                            <constraint firstItem="56G-uP-k78" firstAttribute="centerY" secondItem="mdU-pA-0qu" secondAttribute="centerY" id="Tzs-xK-j04"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sz2-5k-pKj">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="Yab-un-Rhs">
-                            <connections>
-                                <segue destination="Z96-oW-LKp" kind="unwind" unwindAction="unwindToMainWithUnwindSegue:" id="xpq-UT-r9f"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="sz2-5k-pKj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aA-b6-gEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Z96-oW-LKp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1869.4656488549617" y="-2.1126760563380285"/>
         </scene>
@@ -72,10 +79,18 @@
                         <viewLayoutGuide key="safeArea" id="vK2-vG-aBZ"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fI1-cT-NfT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="GVj-AW-9be">
+                            <connections>
+                                <segue destination="bzI-xc-PlV" kind="unwind" unwindAction="unwindTOMainWithUnwindSegue:" id="htd-mo-enm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lei-4g-jSv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="bzI-xc-PlV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2639" y="4"/>
+            <point key="canvasLocation" x="2639" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hqK-fc-zAC">
